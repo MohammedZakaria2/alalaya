@@ -7,7 +7,7 @@ import Contact from './contact';
 import Blog from './blog';
 import Cv from './cv';
 import Home from './home';
-import Portfolio from './portfolio';
+import Portfolio from './Portfolio';
 import Services from './services';
 
 export {
