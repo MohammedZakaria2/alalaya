@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -13,4 +13,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.progress .bg-success {
+  background-color: #ffb400 !important;
+}
+.border-row {
+  padding: 1rem 0;
+}
+.border-row:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.progress {
+  height: 0.8rem;
+  padding: 0.125rem;
+  border: 1px solid #ffb400;
+  background-color: #fff;
+}
+.progress-bar {
+  background-color: #ffb400;
 }
