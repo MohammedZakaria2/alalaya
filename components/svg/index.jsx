@@ -7,8 +7,8 @@ import Contact from './contact';
 import Blog from './blog';
 import Cv from './cv';
 import Home from './home';
-import Services from './services';
 import Portfolio from './portfolio';
+import Services from './services';
 
 export {
   Arrow,
