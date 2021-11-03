@@ -34,3 +34,17 @@ a {
 .progress-bar {
   background-color: #ffb400;
 }
+.divider_span {
+  border-top: 0.17rem solid #80808053;
+  width: 90%;
+  margin: auto;
+}
+.download_btn {
+  background-color: #ffb400;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.required {
+  border: 1px solid #ffb400;
+}

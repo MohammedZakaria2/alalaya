@@ -39,7 +39,7 @@ const Profile = () => {
 
         <Headings.H2
           color={colors.darker}
-          m={'1rem 0'}
+          m={'1rem 0 0.5rem 0'}
           text={'center'}
           size={0.95}
           weight={300}
@@ -123,7 +123,7 @@ const Profile = () => {
               style={{ width: '100%' }}
               justify="space-between"
             >
-              <T weight={300}>Arabic (native)</T>
+              <T weight={300}>Arabic(N)</T>
               <T text="right">90%</T>
             </Flex>
             <ProgressBar style={{ width: '100%' }} now={90} />
@@ -152,14 +152,19 @@ const Profile = () => {
           </Flex>
         </Languages>
       </Details>
-      <Btn p={'0.5rem 2rem'}>
-        <Flex>
-          <Icon.FileEarmarkPdfFill color={colors.white} size={25} />
-          <T p={`0 0.5rem`} color={colors.white}>
-            {text.download}
-          </T>
-        </Flex>
-      </Btn>
+      <div className="divider_span"></div>
+      <Link href="/assets/pdf/mohammed-alalaya-resume.pdf">
+        <a className="download_btn" target="_blank">
+          {/* <Btn p={'0.5rem 2rem'}> */}
+          <Flex>
+            <Icon.FileEarmarkPdfFill color={colors.white} size={25} />
+            <T p={`0 0.5rem`} color={colors.white}>
+              {text.download}
+            </T>
+          </Flex>
+          {/* </Btn> */}
+        </a>
+      </Link>
     </Wrapper>
   );
 };

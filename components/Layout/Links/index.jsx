@@ -149,7 +149,7 @@ const Links = () => {
               <Icon.ArrowReturnLeft size={20} color={'#fff'} />
             </Btn>
           </Flex>
-          <ContactView />
+          <ContactView hide={() => setShow(false)} />
         </Modal.Body>
       </Modal>
     </>

@@ -4,6 +4,13 @@ import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.css';
 // own css files here
 import '../styles/globals.css';
+import { positions, Provider } from 'react-alert';
+import AlertTemplate from 'react-alert-template-basic';
+
+const options = {
+  timeout: 5000,
+  position: positions.BOTTOM_CENTER,
+};
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.layout ? Component.layout : React.Fragment;
@@ -13,9 +20,11 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Provider template={AlertTemplate} {...options}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
     </>
   );
 }
