@@ -12,6 +12,7 @@ import { T } from '@/components/Cor';
 import { Flex } from '@/components/Cor';
 import { Headings } from '@/components/Cor';
 import ContactView from './ContactView';
+import Router from 'next/router';
 
 const text = {
   ho: 'Home',
@@ -35,7 +36,7 @@ const Links = () => {
     } else {
       Cookies.set('theme', 'dark');
     }
-    location.reload();
+    Router.reload();
   };
 
   return (

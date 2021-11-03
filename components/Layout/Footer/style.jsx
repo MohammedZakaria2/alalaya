@@ -15,6 +15,9 @@ export const SocialIcons = styled.div`
   padding: 1rem;
   width: 40%;
   margin: auto;
+  @media (max-width: 1200px) {
+    width: 70%;
+  }
   a {
     transition: all 0.5s ease;
     background-color: ${colors.primary};

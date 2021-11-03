@@ -1,28 +1,26 @@
 import React from 'react';
+import { ProfilePicture } from '../Profile/style';
+import { WrapperProfilePicture } from '../Profile/style';
+import { SocialMedia, Wrapper } from '../Profile/style';
+import { Details } from '../Profile/style';
+import { Dot } from '../Profile/style';
+import { Languages } from '../Profile/style';
 import Image from 'next/image';
-import {
-  Wrapper,
-  SocialMedia,
-  ProfilePicture,
-  Dot,
-  WrapperProfilePicture,
-  Details,
-  Languages,
-  PersonalDetails,
-} from './style';
-import { Headings, Btn, T } from '@/components/Cor';
-import { colors } from '@/components/theme';
-import * as Icon from 'react-bootstrap-icons';
 import Link from 'next/link';
+import { Headings } from '@/components/Cor';
+import * as Icon from 'react-bootstrap-icons';
+import { PersonalDetails } from '../Profile/style';
 import { Flex } from '@/components/Cor';
+import { T } from '@/components/Cor';
 import { ProgressBar } from 'react-bootstrap';
+import { colors } from '@/components/theme';
 
 const text = {
   download: 'Download CV',
 };
-const Profile = () => {
+const PopupProfile = () => {
   return (
-    <Wrapper>
+    <Flex align={'center'} justify={'center'} dr={'column'}>
       <WrapperProfilePicture>
         <ProfilePicture>
           <Image
@@ -169,8 +167,8 @@ const Profile = () => {
           {/* </Btn> */}
         </a>
       </Link>
-    </Wrapper>
+    </Flex>
   );
 };
 
-export default Profile;
+export default PopupProfile;

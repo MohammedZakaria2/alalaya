@@ -24,7 +24,7 @@ const Blog = () => {
       </Head>
       <Wrapper>
         <BlogContent>
-          <Headings.H2 weight={200} size={2} m={'auto'}>
+          <Headings.H2 p={'1rem'} weight={200} size={2} m={'auto'}>
             Content will be ready soon!!! check it out later 😎.
           </Headings.H2>
         </BlogContent>

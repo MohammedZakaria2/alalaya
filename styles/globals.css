@@ -48,3 +48,17 @@ a {
 .required {
   border: 1px solid #ffb400;
 }
+
+@media screen and (max-width: 1200px) {
+  .mobile_menu {
+    display: none !important;
+  }
+}
+
+.mobile_menu {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+}
