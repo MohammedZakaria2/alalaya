@@ -11,16 +11,14 @@ import { ModalBody } from './style';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import ContactView from '../Links/ContactView';
 
 const MobileNavWrapper = styled.div`
   background-color: ${colors.white};
   display: none;
-  /* visibility: hidden; */
-  /* width: none; */
   border-top: 2px solid ${colors.dark};
   @media (max-width: 1200px) {
     width: 100%;
-    /* visibility: visible; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +50,16 @@ const MobileNav = () => {
 
           //   p={'0.5rem'}
         >
-          <Icon.PersonLinesFill color={colors.dark} size={40} />
+          <Icon.PersonLinesFill color={colors.dark} size={30} />
+        </Btn>
+        <Btn
+          onClick={() => {
+            setView('Get In Touch');
+            setShow(true);
+          }}
+          bg={'transparent'}
+        >
+          <Icon.ChatFill color={colors.dark} size={35} />
         </Btn>
         <Btn
           onClick={() => {
@@ -61,7 +68,7 @@ const MobileNav = () => {
           }}
           bg={'transparent'}
         >
-          <Icon.ThreeDots color={colors.dark} size={40} />
+          <Icon.ThreeDots color={colors.dark} size={30} />
         </Btn>
       </MobileNavWrapper>
       <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
@@ -79,6 +86,9 @@ const MobileNav = () => {
           </Flex>
           {view === 'Profile' && <PopupProfile />}
           {view === 'Menu' && <Menu />}
+          {view === 'Get In Touch' && (
+            <ContactView hide={() => setShow(false)} />
+          )}
         </ModalBody>
       </Modal>
     </>

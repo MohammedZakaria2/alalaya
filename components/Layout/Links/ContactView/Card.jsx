@@ -11,7 +11,7 @@ const text = {
 const Card = ({ icon }) => {
   return (
     <>
-      <CardWrapper>
+      {/* <CardWrapper>
         <Flex gap={2} dr={'column'}>
           <Icon.Phone size={30} color={`${colors.primary}`} />
           <Link href={'tel:00905361967'}>
@@ -20,7 +20,7 @@ const Card = ({ icon }) => {
             </a>
           </Link>
         </Flex>
-      </CardWrapper>
+      </CardWrapper> */}
       <CardWrapper>
         <Flex gap={2} dr={'column'}>
           <Icon.Map size={30} color={`${colors.primary}`} />

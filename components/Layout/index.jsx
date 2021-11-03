@@ -11,12 +11,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <FlexGrid>
-        <MobileNav />
         <Profile />
         <Main>{children}</Main>
         <Nav>
           <Links />
         </Nav>
+        <MobileNav />
       </FlexGrid>
       <Main>
         <Footer />

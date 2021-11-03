@@ -3,13 +3,13 @@ import { colors } from '../../theme';
 import { respondTo } from '../../theme';
 export const Wrapper = styled.footer`
   width: 100%;
+  margin-bottom: 3.125rem;
   padding: 0;
   ${respondTo.lg`
   padding: 0 6.25rem 0 16rem;
+  margin-bottom: 0rem;
   `}
-  /* background-color: ${colors.primary}; */
   background-color: #6b6b6b;
-  /* background-color: ${colors.dark}; */
 `;
 export const SocialIcons = styled.div`
   padding: 1rem;
