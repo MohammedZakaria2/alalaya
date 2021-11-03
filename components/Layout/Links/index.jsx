@@ -90,7 +90,7 @@ const Links = () => {
                   {text.exp}
                 </T>
               </span>
-              <Icon.AwardFill color={colors.black} />
+              <Icon.AwardFill color={'#2B2B2B'} />
             </a>
           </Link>
           <Link href={'/education'}>

@@ -54,6 +54,6 @@ export const Icons = styled.div`
 `;
 
 export const ModalBody = styled.div`
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background-color: ${colors.white};
 `;
