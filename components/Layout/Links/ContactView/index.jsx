@@ -1,13 +1,15 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Card from './Card';
-import { Wrapper, CardWrapper } from './style';
+import { Wrapper, FormWrapper } from './style';
 import { db } from './../../../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { Formik } from 'formik';
 import { T, Flex } from '@/components/Cor';
 import { Textarea, Input, FormControl } from './style';
 import { useAlert } from 'react-alert';
+import { Btn } from '@/components/Cor';
+import { colors } from '@/components/theme/colors';
 
 const text = {
   contactCardTitle: 'Feel free to contact me on!!',
@@ -30,7 +32,7 @@ const ContactView = ({ hide }) => {
     <Wrapper>
       <Row>
         <Col lg={8}>
-          <CardWrapper>
+          <FormWrapper>
             <Formik
               initialValues={{
                 first: '',
@@ -41,20 +43,20 @@ const ContactView = ({ hide }) => {
               validate={(values) => {
                 const errors = {};
                 if (!values.first) {
-                  errors.first = 'Required: Please type your first name';
+                  errors.first = 'Please type your first name';
                 }
                 if (!values.last) {
-                  errors.last = 'Required: Please type your last name';
+                  errors.last = 'Please type your last name';
                 }
                 if (!values.email) {
-                  errors.email = 'Required: Please type your email';
+                  errors.email = 'Please type your email';
                 } else if (
                   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                 ) {
-                  errors.email = 'Required: Please type valid email address';
+                  errors.email = 'Please type valid email address';
                 }
                 if (values.message === 'Text Here') {
-                  errors.message = 'Required: Please type your message here';
+                  errors.message = 'Please type your message here';
                 }
                 return errors;
               }}
@@ -82,7 +84,7 @@ const ContactView = ({ hide }) => {
                       <Input
                         name="first"
                         type="text"
-                        placeholder="first name"
+                        placeholder="First name"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.first}
@@ -104,7 +106,7 @@ const ContactView = ({ hide }) => {
                       <Input
                         name="last"
                         type="text"
-                        placeholder="last name"
+                        placeholder="Last name"
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.last}
@@ -164,14 +166,20 @@ const ContactView = ({ hide }) => {
                       </span>
                     </FormControl>
 
-                    <button type="submit" disabled={isSubmitting}>
-                      Submit
-                    </button>
+                    <Btn
+                      type="submit"
+                      p={'0.5rem 1rem'}
+                      disabled={isSubmitting}
+                    >
+                      <T color={colors.white} size={0.9}>
+                        Send!
+                      </T>
+                    </Btn>
                   </Flex>
                 </form>
               )}
             </Formik>
-          </CardWrapper>
+          </FormWrapper>
         </Col>
         <Col lg={4}>
           <Card />

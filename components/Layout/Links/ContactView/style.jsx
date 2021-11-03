@@ -3,9 +3,18 @@ import { colors } from './../../../theme';
 
 export const Wrapper = styled.div`
   padding: 2rem;
+  @media (max-width: 1200px) {
+    padding: 2rem 0;
+  }
 `;
 
 export const CardWrapper = styled.div`
+  background-color: #f0f0f6;
+  padding: 2rem;
+  margin: 1rem 0;
+`;
+
+export const FormWrapper = styled.div`
   background-color: #f0f0f6;
   padding: 2rem;
   margin: 1rem 0;
