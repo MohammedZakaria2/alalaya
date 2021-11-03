@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-  background-color: ${colors.bg};
+  background-color: #f0f0f6;
   padding: 2rem;
   margin: 1rem 0;
 `;

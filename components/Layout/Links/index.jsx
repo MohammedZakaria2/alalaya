@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Wrapper, Icons, Tooltip } from './style';
+import { Wrapper, Icons, ModalBody } from './style';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
-import { Btn } from '@/components/Cor';
 import { colors } from '@/components/theme/colors';
 import { Contact, Contrast, Home, Cv, Portfolio, Blog } from '@/components/svg';
-import { T } from '@/components/Cor';
 import { useRouter } from 'next/router';
 import * as Icon from 'react-bootstrap-icons';
 import { Modal } from 'react-bootstrap';
+import { Btn } from '@/components/Cor';
+import { T } from '@/components/Cor';
 import { Flex } from '@/components/Cor';
 import { Headings } from '@/components/Cor';
 import ContactView from './ContactView';
@@ -137,7 +137,7 @@ const Links = () => {
         </Icons>
       </Wrapper>
       <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
-        <Modal.Body>
+        <ModalBody>
           <Flex
             style={{ borderBottom: '1px solid #f4f4f4' }}
             p={'0 0 0.8rem 0'}
@@ -150,7 +150,7 @@ const Links = () => {
             </Btn>
           </Flex>
           <ContactView hide={() => setShow(false)} />
-        </Modal.Body>
+        </ModalBody>
       </Modal>
     </>
   );

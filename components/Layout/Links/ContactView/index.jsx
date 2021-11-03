@@ -94,7 +94,7 @@ const ContactView = ({ hide }) => {
                         }
                       />
                       <span>
-                        <T size={0.9}>
+                        <T color={'#FFB400'} size={0.9}>
                           {errors.first && touched.first && errors.first}
                         </T>
                       </span>
@@ -116,7 +116,7 @@ const ContactView = ({ hide }) => {
                         }
                       />
                       <span>
-                        <T size={0.9}>
+                        <T color={'#FFB400'} size={0.9}>
                           {errors.last && touched.last && errors.last}
                         </T>
                       </span>
@@ -137,7 +137,7 @@ const ContactView = ({ hide }) => {
                         }
                       />
                       <span>
-                        <T size={0.9}>
+                        <T color={'#FFB400'} size={0.9}>
                           {errors.email && touched.email && errors.email}
                         </T>
                       </span>
@@ -158,7 +158,7 @@ const ContactView = ({ hide }) => {
                         }
                       ></Textarea>
                       <span>
-                        <T size={0.9}>
+                        <T color={'#FFB400'} size={0.9}>
                           {errors.message && touched.message && errors.message}
                         </T>
                       </span>
