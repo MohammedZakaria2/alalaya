@@ -53,14 +53,18 @@ const projects = [
 
 const text = {
   heading: 'Technical Projects',
-  subText: 'projects i worked on',
+  subText:
+    'Projects i worked on Gladly that added tpo me a wide experience and a lot of skills',
 };
 const Portfolio = () => {
   return (
     <>
       <Head>
         <title>ALALAYA | {'Portfolio & Experience'}</title>
-        <meta name="description" content="projects i worked on" />
+        <meta
+          name="description"
+          content="Projects i worked on Gladly that added tpo me a wide experience and a lot of skills"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GidContent

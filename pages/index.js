@@ -14,7 +14,7 @@ export default function Home() {
         <title>ALALAYA | Home</title>
         <meta
           name="description"
-          content="i am Mohammed Alalaya and this is my portfolio"
+          content="I'm Mohammed Alalaya and I am a front / back end developer check out my portfolio"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
