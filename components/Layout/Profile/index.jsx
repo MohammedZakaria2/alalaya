@@ -27,8 +27,8 @@ const Profile = () => {
         <ProfilePicture>
           <Image
             alt="profile"
-            src={'/assets/images/profile.jpg'}
-            height={'465'}
+            src={'/assets/images/pp.jpg'}
+            height={'350'}
             width={'350'}
           />
         </ProfilePicture>

@@ -5,12 +5,14 @@ import { colors } from '@/components/theme/colors';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Wrapper } from './style';
+import Image from 'next/image';
 
 const Grid = ({ list }) => {
   return (
     <Wrapper>
       {list.map((item, index) => (
         <Row className="border-row" key={index}>
+          <Col>{/* <Image  /> */}</Col>
           <Col lg={12}>
             <Row>
               <Col md={12} lg={3}>

@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
 export const ProfilePicture = styled.div`
   margin: 1.6rem auto;
   /* width: 100%; */
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   overflow: hidden;
   display: flex;
   align-items: center;
